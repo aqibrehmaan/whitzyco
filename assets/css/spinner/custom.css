@@ -1,0 +1,52 @@
+/************************ CUSTOM STYLESHEET ************************/
+
+
+/***** General CSS *****/
+/*
+body {word-break: break-word;font:15px/22px 'Lato', sans-serif;color:#333333;overflow-x:hidden;}
+a {text-decoration:none;color:#ec1d25;}
+a:hover, a:focus {text-decoration:none;color:#333333;}
+a:hover {transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;}
+img {max-width:100%;}
+input[type="text"]:focus, textarea:focus, input[type="password"]:focus, select:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="tel"]:focus, input[type="number"]:focus {transition: all 0.5s ease;-webkit-transition: all 0.5s ease;-moz-transition: all 0.5s ease;outline:none;}
+select, input[type="text"], input[type="password"], input[type="email"], input[type="url"], input[type="number"], textarea, input[type="tel"] {/*-webkit-appearance: none;-moz-appearance: none;appearance: none;*/
+/*}
+
+
+*/
+
+/***** Font Files *****/
+/*
+@font-face{font-family:'Fonts Awesome';src:url(../fonts/fontawesome-webfont.eot);src:url(../fonts/fontawesome-webfont.eot?#iefix) format("embedded-opentype"),url(../fonts/fontawesome-webfont.woff) format("woff"),url(../fonts/fontawesome-webfont.ttf) format("truetype"),url(../fonts/fontawesome-webfont.svg#fontawesome-webfont) format("svg");font-weight:400;font-style:normal}
+h1, h2, h3, h4, h5, h6 {font-family: 'Poppins', sans-serif;}
+*/
+
+
+/*modal css start*/
+
+/**{outline: none!important;}*/
+#spinnerModal ul {margin:0;padding:0;list-style-type:none;}
+.spinerIcon img {width: 70px;height: 70px;}
+.spinerIcon {position: fixed;bottom: 0;right: 0; margin-bottom: 100px; margin-right: 10px;z-index: 9999}
+#spinnerModal{padding: 0!important;}
+#spinnerModal .modal-dialog {margin: 0;border: 0px!important;width: 70%;position: relative;}
+#spinnerModal .modal-dialog:after {position: absolute;content: "";bottom: 0;right: 0;width: 100%;height: 100%;background: url('../images/bg.png');background-position: center;background-size: cover;}
+#spinnerModal .modal-body {z-index: 9;height: 100vh;align-content: center;justify-content: center;display: flex;flex-direction: column;}
+#spinnerModal .modal-content {border-radius: 0;margin: 0;background-color: rgb(226, 62, 87);}
+#spinnerModal span {position: absolute;top: 0px;right: -40px;opacity: 1;background: #000;width: 40px;height: 40px;padding: 7px 0;border-radius: 50%;}
+#spinnerModal button.close {opacity: 1;color: #fff;}
+#spinnerModal .spinner {position: relative;}
+#spinnerModal .spinner canvas {margin: 0 auto;display: table;background: #fff;border-radius: 50%;}
+#spinnerModal .spinner i {position: absolute;top: -20px;left: 0;text-align: center;width: 100%;align-content: center;justify-content: center;display: flex;flex-direction: column;height: 100%;font-size: 160px;color: #000;transform: rotate(180deg);}
+#spinnerModal .spinnerCntnt h6 {font-size: 26px;margin: 0 0 10px 0px;color: #fff;}
+#spinnerModal .spinnerCntnt ul li i {margin-right: 10px;font-size: 10px;}
+#spinnerModal .spinnerCntnt ul li {font-size: 18px;margin-bottom: 10px;color: #fff;}
+#spinnerModal .spinnerCntnt .form-control {height: 50px;box-shadow: none;border-radius: 0;font-size: 18px;}
+#spinnerModal .spinnerCntnt #spin_button {width: 100%;display: block;text-transform: uppercase;font-size: 20px;border: none;background: #ffbe10;margin-bottom: 10px;text-align: center;padding: 15px;color: #000;}
+#spinnerModal .spinnerCntnt .form-check{margin: 20px 0 10px;}
+#spinnerModal .spinnerCntnt .form-check label{font-size: 18px;color: #fff;}
+#spinnerModal .spinnerCntnt .form-check label a{color: #222;}
+#spinnerModal .spinnerCntnt .neverList li{margin: 0;}
+#spinnerModal .spinnerCntnt .neverList li a{font-size: 18px;color: #fff;}
+/*modal css end*/
+
