@@ -382,3 +382,26 @@ $(function () {
     $('.featured-content .slick-dots li:nth-child(4)').html('<button>On Sale</button>');
 
   });
+
+  /* =========================================================
+                      DEPARTMENT SLIDER
+   ========================================================= */
+
+   $(function () {
+    $('.department-slider').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: true,
+      loop: true,
+      autoplay: true,
+    });
+
+      // SLICK DOTS
+      $('.department-content .slick-dots li:nth-child(1)').html('<button>Children & Youth</button>');
+      $('.department-content .slick-dots li:nth-child(2)').html('<button>Apparel & Accessories</button>');
+      $('.department-content .slick-dots li:nth-child(3)').html('<button>Party & Holiday</button>');
+
+   });
+  

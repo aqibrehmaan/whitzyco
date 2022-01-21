@@ -688,11 +688,13 @@
     margin-right: 1.5rem
 }
 
-.featured-content .featured-brand-slider {
+.featured-content .featured-brand-slider,
+.department-content .department-slider {
     padding-top: 8rem;
 }
 
-.featured-content .slick-dots {
+.featured-content .slick-dots,
+.department-content .slick-dots {
     top: 0;
     left: 0;
     bottom: auto;
@@ -700,17 +702,20 @@
     font-family: 'Poppins', 'sans-serif';
 }
 
-.featured-content .slick-dots li {
+.featured-content .slick-dots li,
+.department-content .slick-dots li {
     width: auto;
     height: auto;
 }
 
-.featured-content .slick-dots li.slick-active button {
+.featured-content .slick-dots li.slick-active button,
+.department-content .slick-dots li.slick-active button {
     background-color: #023a55;
     color: #fff;
 }
 
-.featured-content .slick-dots li button {
+.featured-content .slick-dots li button,
+.department-content .slick-dots li button {
     font-size: 1.5rem;
     color: #023a55;
     line-height: normal;
@@ -877,6 +882,7 @@
     width: 100%;
     max-width: 160px;
     min-height: 200px;
+    display: inline !important;
 }
 
 .department-card-footer {
@@ -893,6 +899,9 @@
     font-weight: 700;
 }
 
+.department-slider .row {
+    padding: 0 1.5rem
+}
 
 /* ========================================
                 SHIPPING SECTION
@@ -1153,6 +1162,11 @@
 
     .featured-tabs button {
         text-align: left;
+    }
+
+    .featured-content .featured-brand-slider,
+    .department-content .department-slider {
+        padding-top: 13rem;
     }
 
     /* DEPARTMENT */
