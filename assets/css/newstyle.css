@@ -5,7 +5,7 @@
 
 .header-top-content {
     background-color: #4acbce;
-    padding: 5rem 0;
+    padding: 1.2rem 0;
 }
 
 .header-top-content .container-header {
@@ -18,6 +18,8 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
 }
 
 .header-top-content ul li {
@@ -122,12 +124,28 @@
 }
 
 .site-logo-wrap .site-logo {
-    margin: 5rem 0;
+    margin: 2rem 0;
 }
 
 .site-logo img {
     width: 195px;
     height: 91px;
+}
+
+/* SITE SEARCH */
+.header-search-form {
+    max-width: 433px;
+    margin: 0 auto;
+}
+
+.header-search-form .form-group {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 500px) {
+    .header-search-form .form-group {
+        margin-bottom: 15px;
+    }
 }
 
 .site-nav {
@@ -167,7 +185,7 @@
 .site-nav-nested .nested .nested-inner {
     position: absolute;
     right: -200px;
-    bottom: -4rem;
+    top: 10.2rem;
     max-width: 200px;
     min-width: 200px;
     display: flex;
@@ -267,7 +285,7 @@
 }
 
 .slider-content-row {
-    margin-top: 5rem;
+    margin-top: 2rem;
     position: relative;
 }
 
@@ -953,6 +971,35 @@
 .brands {
     font-family: "Poppins", "Raleway", "sans-serif";
     padding: 4rem 0;
+}
+
+.brands .container {
+    width: 1300px;
+    max-width: 1300px !important;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .brands .container {
+        width: 760px;
+        max-width: 760px;
+    }
+
+    .brands .brands-row {
+        flex-wrap: wrap;
+    }
+
+    .brands .brands-row .brands-row-col {
+        min-width: 30%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .brands .container {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 .brands .brands-head {
