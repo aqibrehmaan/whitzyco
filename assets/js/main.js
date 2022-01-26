@@ -404,4 +404,32 @@ $(function () {
       $('.department-content .slick-dots li:nth-child(3)').html('<button>Party & Holiday</button>');
 
    });
+
+  /* =========================================================
+                     CUSTOMER SLIDER
+   ========================================================= */
+  
+   $(function() {
+      $('.customer-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        loop: true,
+        autoplay: true,
+      });
+
+      $('.customer-slider-left-btn').click(function(e){
+        e.preventDefault();
+        $('.customer-slider').slick('slickPrev');
+      });
+    
+      $('.customer-slider-right-btn').click(function(e){
+        e.preventDefault();
+        $('.customer-slider').slick('slickNext');
+      });
+
+      
+   });
   

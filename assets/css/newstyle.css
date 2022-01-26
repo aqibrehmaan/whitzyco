@@ -41,6 +41,24 @@
 .header-mid-content h3 {
     font-family: 'Poppins', 'Raleway', 'sans-serif';
     font-weight: 600;
+    margin-bottom: -1px;
+}
+
+.header-mid-content .sign-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sign-container .sign-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 500px) {
+    .sign-container .sign-row {
+        flex-direction: column;
+    }
 }
 
 .header-mid-content .header-mid-row {
@@ -102,7 +120,7 @@
 }
 
 .search-form-cart-wrap .cart-icon {
-    margin-right: 4rem;
+    margin-right: 1rem;
 }
 
 .search-form-cart-wrap .price {
@@ -290,7 +308,8 @@
 }
 
 .slider-content-row .header-slider-btn,
-.banner .banner-slider-btn {
+.banner .banner-slider-btn,
+.customers .customer-slider-btn {
     position: absolute;
     top: 50%;
     z-index: 9999;
@@ -301,17 +320,20 @@
 }
 
 .slider-content-row .header-slider-btn img,
-.banner .banner-slider-btn img {
+.banner .banner-slider-btn img,
+.customers .customer-slider-btn img {
     width: 100%;
 }
 
 .slider-content-row .header-slider-left-btn,
-.banner .banner-slider-left-btn {
+.banner .banner-slider-left-btn,
+.customers .customer-slider-left-btn {
     left: 0;
 }
 
 .slider-content-row .header-slider-right-btn,
-.banner .banner-slider-right-btn {
+.banner .banner-slider-right-btn,
+.customers .customer-slider-right-btn {
     right: 0;
 }
 
@@ -757,6 +779,7 @@
     background-color: #4acbce;
     padding: 6rem 0;
     font-family: 'Poppins', 'Raleway', 'sans-serif';
+    position: relative;
 }
 
 .customers .flex-row {
@@ -800,6 +823,7 @@
     background-color: #fff;
     padding: 1rem 4rem;
 }
+
 
 /* ========================================
                 DEPARTMENT SECTION
