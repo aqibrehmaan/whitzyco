@@ -349,40 +349,6 @@ $(function () {
 
   });
 
-/* =========================================================
-                      FEATURED SLIDER
-   ========================================================= */
-
-  $(function() {
-
-  // ======= FEATURED BRAND SLIDER ============
-    $('.featured-brand-slider').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: true,
-      loop: true,
-      autoplay: true,
-    });
-
-    $('.featured-brand-left-btn').click(function(){
-      $('.featured-brand-slider').slick('slickPrev');
-
-    });
-
-    $('.featured-brand-right-btn').click(function(){
-      $('.featured-brand-slider').slick('slickNext');
-    });
-
-    // SLICK DOTS
-    $('.featured-content .slick-dots li:nth-child(1)').html('<button>Brand New</button>');
-    $('.featured-content .slick-dots li:nth-child(2)').html('<button>Most Popular</button>');
-    $('.featured-content .slick-dots li:nth-child(3)').html('<button>Top Rated</button>');
-    $('.featured-content .slick-dots li:nth-child(4)').html('<button>On Sale</button>');
-
-  });
-
   /* =========================================================
                       DEPARTMENT SLIDER
    ========================================================= */
